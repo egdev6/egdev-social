@@ -1,0 +1,96 @@
+/* Global reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color tokens — matching agent-teams-docs dark theme */
+  --color-bg: #000000;
+  --color-surface: #0a0a0a;
+  --color-border: #1a1a1a;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cccccc;
+  --color-text-muted: #888888;
+  
+  /* Brand red — vivid neon */
+  --color-brand-primary: #ff0036;
+  --color-brand-dark: #cc002b;
+  --color-brand-light: #ff335e;
+  
+  /* Glow effects */
+  --glow-base: 0 4px 20px rgba(255, 0, 54, 0.15);
+  --glow-active: 0 8px 30px rgba(255, 0, 54, 0.3);
+  --glow-intense: 0 0 22px 4px rgba(255, 0, 54, 0.65), 0 0 55px 8px rgba(255, 0, 54, 0.28);
+  
+  /* Grid opacity */
+  --grid-opacity: 0.025;
+  
+  /* Typography */
+  --font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  
+  /* Grid background pattern */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, var(--grid-opacity)) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, var(--grid-opacity)) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+a {
+  color: var(--color-brand-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-brand-light);
+}
+
+/* Utility classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}

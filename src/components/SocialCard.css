@@ -1,0 +1,165 @@
+.social-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 1.75rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease,
+    opacity 0.3s ease, background 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  overflow: hidden;
+}
+
+.social-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 0, 54, 0.07) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.social-card--visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Hover state — neon red border + intense glow */
+.social-card:hover {
+  border-color: rgba(255, 0, 54, 0.45);
+  box-shadow: 
+    0 0 0 1px rgba(255, 0, 54, 0.12),
+    0 8px 40px rgba(255, 0, 54, 0.12),
+    0 20px 60px rgba(0, 0, 0, 0.25);
+  transform: translateY(-6px) scale(1.02);
+}
+
+.social-card:hover::before {
+  opacity: 1;
+}
+
+/* Active/pressed state */
+.social-card:active {
+  transform: translateY(-2px) scale(1.01);
+}
+
+.social-card__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1;
+}
+
+/* Icon */
+.social-card__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 0, 54, 0.1);
+  border: 1px solid rgba(255, 0, 54, 0.22);
+  transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.social-card:hover .social-card__icon-wrapper {
+  background: rgba(255, 0, 54, 0.18);
+}
+
+.social-card__icon {
+  font-size: 2rem;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.social-card:hover .social-card__icon {
+  transform: scale(1.1);
+}
+
+/* Content */
+.social-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.social-card__platform {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.social-card:hover .social-card__platform {
+  color: var(--color-brand-light);
+}
+
+.social-card__handle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-brand-primary);
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.social-card:hover .social-card__handle {
+  color: var(--color-brand-light);
+  text-shadow: 0 0 12px rgba(255, 0, 54, 0.4);
+}
+
+.social-card__description {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+}
+
+.social-card:hover .social-card__description {
+  color: var(--color-text-secondary);
+}
+
+/* Arrow indicator */
+.social-card__arrow {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.75rem;
+  color: var(--color-text-muted);
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all 0.25s ease;
+}
+
+.social-card:hover .social-card__arrow {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--color-brand-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .social-card {
+    padding: 1.5rem;
+  }
+  
+  .social-card__icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .social-card__icon {
+    font-size: 1.75rem;
+  }
+  
+  .social-card__arrow {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}
