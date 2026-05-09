@@ -68,7 +68,7 @@ function App() {
 
           <a
             className="community-band__cta"
-            href="https://discord.gg/ztnvpPQr6E"
+            href="https://discord.gg/xffecBzMEQ"
             target="_blank"
             rel="noopener noreferrer"
           >

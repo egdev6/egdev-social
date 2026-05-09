@@ -59,7 +59,7 @@ export const socialLinks: SocialLink[] = [
   {
     platform: 'Instagram',
     handle: '@egdev',
-    url: 'https://www.instagram.com/egdev',
+    url: 'https://www.instagram.com/egdev6',
     Icon: InstagramIcon,
     description: 'Vida personal, amigos, familia y viajes'
   }
