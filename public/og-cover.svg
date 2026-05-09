@@ -1,0 +1,71 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050505"/>
+      <stop offset="1" stop-color="#12040A"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(920 120) rotate(90) scale(320 420)">
+      <stop stop-color="#FF0036" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FF0036" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 520) rotate(90) scale(260 360)">
+      <stop stop-color="#FF0036" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#FF0036" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D5D5D5"/>
+    </linearGradient>
+    <filter id="blur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowA)"/>
+  <rect width="1200" height="630" fill="url(#glowB)"/>
+
+  <g opacity="0.16">
+    <path d="M0 0H1200" stroke="white" stroke-opacity="0.18"/>
+    <path d="M0 63H1200" stroke="white" stroke-opacity="0.1"/>
+    <path d="M0 126H1200" stroke="white" stroke-opacity="0.1"/>
+    <path d="M0 189H1200" stroke="white" stroke-opacity="0.1"/>
+    <path d="M0 252H1200" stroke="white" stroke-opacity="0.1"/>
+    <path d="M0 315H1200" stroke="white" stroke-opacity="0.1"/>
+    <path d="M0 378H1200" stroke="white" stroke-opacity="0.1"/>
+    <path d="M0 441H1200" stroke="white" stroke-opacity="0.1"/>
+    <path d="M0 504H1200" stroke="white" stroke-opacity="0.1"/>
+    <path d="M0 567H1200" stroke="white" stroke-opacity="0.1"/>
+    <path d="M0 0V630" stroke="white" stroke-opacity="0.18"/>
+    <path d="M120 0V630" stroke="white" stroke-opacity="0.1"/>
+    <path d="M240 0V630" stroke="white" stroke-opacity="0.1"/>
+    <path d="M360 0V630" stroke="white" stroke-opacity="0.1"/>
+    <path d="M480 0V630" stroke="white" stroke-opacity="0.1"/>
+    <path d="M600 0V630" stroke="white" stroke-opacity="0.1"/>
+    <path d="M720 0V630" stroke="white" stroke-opacity="0.1"/>
+    <path d="M840 0V630" stroke="white" stroke-opacity="0.1"/>
+    <path d="M960 0V630" stroke="white" stroke-opacity="0.1"/>
+    <path d="M1080 0V630" stroke="white" stroke-opacity="0.1"/>
+  </g>
+
+  <circle cx="968" cy="146" r="132" fill="#FF0036" fill-opacity="0.18" filter="url(#blur)"/>
+  <circle cx="197" cy="507" r="102" fill="#FF0036" fill-opacity="0.14" filter="url(#blur)"/>
+  <circle cx="881" cy="500" r="54" fill="#FF0036" fill-opacity="0.18" filter="url(#blur)"/>
+
+  <g transform="translate(120 148)">
+    <rect x="0" y="0" width="110" height="110" rx="24" fill="rgba(255,0,54,0.08)"/>
+    <path d="M78.9818 29.1868V53.7639L53.9351 42.0265V104.726L164.5704 158.164V98.5444L78.9818 29.1868Z" fill="#E91B35"/>
+    <path d="M30.0522 11.624V104.726L-80.5831 158.164V98.5444L30.0522 11.624Z" transform="translate(80.5831 17)" fill="#800C1D"/>
+    <path d="M0 98.5444L110.635 151.982V209.41L0 158.164V98.5444Z" transform="translate(49.948 17)" fill="#E91B35"/>
+    <path d="M110.635 98.5444L0 151.982V209.41L110.635 158.164V98.5444Z" transform="translate(53.9351 17)" fill="#800C1D"/>
+  </g>
+
+  <text x="120" y="330" fill="#FF335E" font-family="'Space Grotesk', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="1.5px">@egdev</text>
+  <text x="120" y="415" fill="url(#accent)" font-family="'Space Grotesk', Arial, sans-serif" font-size="78" font-weight="700">Social Links &amp; Stack &amp; Flow</text>
+  <text x="120" y="472" fill="#D4D4D4" font-family="'Space Grotesk', Arial, sans-serif" font-size="30" font-weight="500">Frontend, arquitectura, comunidad y contenido técnico.</text>
+
+  <g transform="translate(120 515)">
+    <rect width="292" height="58" rx="29" fill="rgba(255,0,54,0.14)" stroke="rgba(255,0,54,0.45)"/>
+    <text x="34" y="38" fill="#FFFFFF" font-family="'Space Grotesk', Arial, sans-serif" font-size="26" font-weight="700">www.egdev.es</text>
+  </g>
+</svg>
