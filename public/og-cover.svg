@@ -52,20 +52,25 @@
   <circle cx="197" cy="507" r="102" fill="#FF0036" fill-opacity="0.14" filter="url(#blur)"/>
   <circle cx="881" cy="500" r="54" fill="#FF0036" fill-opacity="0.18" filter="url(#blur)"/>
 
-  <g transform="translate(120 148)">
-    <rect x="0" y="0" width="110" height="110" rx="24" fill="rgba(255,0,54,0.08)"/>
-    <path d="M78.9818 29.1868V53.7639L53.9351 42.0265V104.726L164.5704 158.164V98.5444L78.9818 29.1868Z" fill="#E91B35"/>
-    <path d="M30.0522 11.624V104.726L-80.5831 158.164V98.5444L30.0522 11.624Z" transform="translate(80.5831 17)" fill="#800C1D"/>
-    <path d="M0 98.5444L110.635 151.982V209.41L0 158.164V98.5444Z" transform="translate(49.948 17)" fill="#E91B35"/>
-    <path d="M110.635 98.5444L0 151.982V209.41L110.635 158.164V98.5444Z" transform="translate(53.9351 17)" fill="#800C1D"/>
+  <g transform="translate(506 70) scale(0.72)">
+    <path d="M180.361 89.1644V104.126L157.235 93.2817V131.446L259.422 180.743V125.723L180.361 89.1644Z" fill="#E91B35"/>
+    <path d="M135.19 78.4697V131.446L33 180.743V125.723L135.19 78.4697Z" fill="#800C1D"/>
+    <path d="M33 125.723L135.19 175.021V228L33 180.743V125.723Z" fill="#E91B35"/>
+    <path d="M259.422 125.723L157.235 175.021V228L259.422 180.743V125.723Z" fill="#800C1D"/>
+    <path d="M186.333 80.0491L158.207 66.8652V41.0888L186.333 54.2727V80.0491Z" fill="#E91B35"/>
+    <path d="M218.081 53.1775L200.625 44.9949V29L218.081 37.1827V53.1775Z" fill="#E91B35"/>
+    <path d="M230.11 100.278L206.051 89.0019V66.9561L230.11 78.2325V100.278Z" fill="#E91B35"/>
   </g>
 
-  <text x="120" y="330" fill="#FF335E" font-family="'Space Grotesk', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="1.5px">@egdev</text>
-  <text x="120" y="415" fill="url(#accent)" font-family="'Space Grotesk', Arial, sans-serif" font-size="78" font-weight="700">Social Links &amp; Stack &amp; Flow</text>
-  <text x="120" y="472" fill="#D4D4D4" font-family="'Space Grotesk', Arial, sans-serif" font-size="30" font-weight="500">Frontend, arquitectura, comunidad y contenido técnico.</text>
+  <text x="600" y="278" text-anchor="middle" fill="#FF335E" font-family="'Space Grotesk', Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="1.5px">@egdev</text>
+  <text x="600" y="360" text-anchor="middle" fill="url(#accent)" font-family="'Space Grotesk', Arial, sans-serif" font-size="72" font-weight="700">
+    <tspan x="600" dy="0">Social Links</tspan>
+    <tspan x="600" dy="84">&amp; Stack &amp; Flow</tspan>
+  </text>
+  <text x="600" y="490" text-anchor="middle" fill="#D4D4D4" font-family="'Space Grotesk', Arial, sans-serif" font-size="30" font-weight="500">Frontend, arquitectura, comunidad y contenido técnico.</text>
 
-  <g transform="translate(120 515)">
+  <g transform="translate(454 526)">
     <rect width="292" height="58" rx="29" fill="rgba(255,0,54,0.14)" stroke="rgba(255,0,54,0.45)"/>
-    <text x="34" y="38" fill="#FFFFFF" font-family="'Space Grotesk', Arial, sans-serif" font-size="26" font-weight="700">www.egdev.es</text>
+    <text x="146" y="38" text-anchor="middle" fill="#FFFFFF" font-family="'Space Grotesk', Arial, sans-serif" font-size="26" font-weight="700">www.egdev.es</text>
   </g>
 </svg>
