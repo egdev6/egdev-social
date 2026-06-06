@@ -36,7 +36,7 @@ function App() {
           <section className={`hero ${mounted ? 'fade-in-visible' : ''}`}>
             <Logo className='hero__logo' />
             <p className="hero__subtitle">
-              Senior frontend software engineer, creador de contenido técnico y speeker.
+              Senior frontend software engineer, creador de contenido técnico y speker.
             </p>
             <p className="hero__description">
               "Si quieres algo, márcate un objetivo, diseña tu estrategia y ponte a trabajar. No esperes a que las cosas sucedan, haz que sucedan."
