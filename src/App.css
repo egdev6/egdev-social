@@ -322,6 +322,21 @@
   transform: translateY(-2px);
 }
 
+/* Gentleman Programming Discord band */
+.community-band--gentle {
+  border-top: none;
+  transition-delay: 280ms;
+}
+
+/* svgr `icon: true` gives the SVG a 1:1 intrinsic box, so the 2538x1631 artwork
+   must be given its own ratio explicitly or it renders small and letterboxed */
+.community-band__logo--gentle {
+  display: block;
+  margin-bottom: 1rem;
+  width: 78px;
+  height: 50px;
+}
+
 @media (max-width: 900px) {
   .community-band__inner {
     flex-direction: column;

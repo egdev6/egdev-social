@@ -5,6 +5,7 @@ import { socialLinks } from './data/social-links'
 import { HeroBokeh, MousePulse } from './components/canvas'
 import Logo from './assets/logo.svg?react'
 import StackAndFlowLogo from './assets/stackandflow.svg?react'
+import GentleLogo from './assets/gentle.svg?react'
 
 function App() {
   const [mounted, setMounted] = useState(false)
@@ -73,6 +74,27 @@ function App() {
             rel="noopener noreferrer"
           >
             Acceder a Discord
+          </a>
+        </div>
+      </section>
+
+      <section className={`community-band community-band--gentle ${mounted ? 'fade-in-visible' : ''}`}>
+        <div className="community-band__inner container">
+          <div className="community-band__content">
+            <GentleLogo className="community-band__logo--gentle" aria-hidden="true" />
+            <h2 className="community-band__title">Gentleman Programming en Discord</h2>
+            <p className="community-band__description">
+              Maintainer de Gentleman Programming. Debatimos harness, agentes, RDD y flujos de trabajo reales en el Discord de la comunidad.
+            </p>
+          </div>
+
+          <a
+            className="community-band__cta"
+            href="https://discord.com/invite/3QVhF5vRsR"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Acceder al Discord
           </a>
         </div>
       </section>
