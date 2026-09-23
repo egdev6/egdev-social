@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 *-workspace.yaml
+# pnpm's build-approval state must be tracked: an ignored pnpm-workspace.yaml
+# makes every fresh clone fail with ERR_PNPM_IGNORED_BUILDS (esbuild)
+!pnpm-workspace.yaml
