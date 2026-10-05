@@ -4,6 +4,7 @@ import GithubIcon from '../assets/github.svg?react'
 import TwitchIcon from '../assets/twitch.svg?react'
 import YoutubeIcon from '../assets/youtube.svg?react'
 import InstagramIcon from '../assets/instagram.svg?react'
+import TiktokIcon from '../assets/tiktok.svg?react'
 
 export interface SocialLink {
   platform: string
@@ -55,6 +56,13 @@ export const socialLinks: SocialLink[] = [
     url: 'https://www.youtube.com/@egdev6',
     Icon: YoutubeIcon,
     description: 'Resubida de Twitch, tutoriales y contenido técnico'
+  },
+  {
+    platform: 'TikTok',
+    handle: '@egdev.es',
+    url: 'https://www.tiktok.com/@egdev.es',
+    Icon: TiktokIcon,
+    description: 'Videos cortos sobre desarrollo, herramientas, IA y experiencia profesional.'
   },
   {
     platform: 'Instagram',
