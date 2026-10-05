@@ -1,0 +1,8 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <path id="tiktok-note" d="M82 25H98C98 39 107 48 121 49V65C112 65 104 62 98 57V94C98 113 85 125 67 125C49 125 36 112 36 95C36 77 49 64 67 64C70 64 73 64 76 65V82C73 80 70 80 67 80C59 80 53 86 53 95C53 103 59 109 67 109C76 109 82 103 82 94V25Z" />
+  </defs>
+  <use href="#tiktok-note" fill="#25F4EE" transform="translate(-3 -2)" />
+  <use href="#tiktok-note" fill="#FE2C55" transform="translate(3 2)" />
+  <use href="#tiktok-note" fill="white" />
+</svg>
